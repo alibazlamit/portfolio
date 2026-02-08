@@ -9,6 +9,19 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Ali Bazlamit | Senior Software Engineer",
   description: "Senior Backend Engineer specializing in Go, Distributed Systems, and High-Scale Infrastructure.",
+  openGraph: {
+    title: "Ali Bazlamit | Senior Software Engineer",
+    description: "Senior Backend Engineer specializing in Go, Distributed Systems, and High-Scale Infrastructure.",
+    url: "https://alibazlamit.com",
+    siteName: "Ali Bazlamit Portfolio",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ali Bazlamit | Senior Software Engineer",
+    description: "Senior Backend Engineer specializing in Go, Distributed Systems, and High-Scale Infrastructure.",
+  },
 };
 
 export default function RootLayout({
