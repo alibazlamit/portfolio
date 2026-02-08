@@ -24,7 +24,10 @@ export function Terminal({ className }: { className?: string }) {
         let currentIndex = 0;
         const interval = setInterval(() => {
             if (currentIndex < lines.length) {
-                setContent((prev) => [...prev, lines[currentIndex]]);
+                const line = lines[currentIndex];
+                if (line) {
+                    setContent((prev) => [...prev, line]);
+                }
                 currentIndex++;
             } else {
                 clearInterval(interval);
@@ -52,23 +55,26 @@ export function Terminal({ className }: { className?: string }) {
                 ref={scrollRef}
                 className="p-4 h-64 overflow-y-auto text-slate-300 space-y-1"
             >
-                {content.map((line, i) => (
-                    <motion.div
-                        key={i}
-                        initial={{ opacity: 0, x: -10 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.2 }}
-                    >
-                        <span className={cn(
-                            "mr-2",
-                            line.includes("[SUCCESS]") ? "text-green-400" :
-                                line.includes("[INFO]") ? "text-blue-400" : "text-slate-500"
-                        )}>
-                            {line.startsWith(">") ? "$" : ""}
-                        </span>
-                        {line.replace(">", "")}
-                    </motion.div>
-                ))}
+                {content.map((line, i) => {
+                    if (!line) return null;
+                    return (
+                        <motion.div
+                            key={i}
+                            initial={{ opacity: 0, x: -10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.2 }}
+                        >
+                            <span className={cn(
+                                "mr-2",
+                                line.includes("[SUCCESS]") ? "text-green-400" :
+                                    line.includes("[INFO]") ? "text-blue-400" : "text-slate-500"
+                            )}>
+                                {line.startsWith(">") ? "$" : ""}
+                            </span>
+                            {line.replace(">", "")}
+                        </motion.div>
+                    );
+                })}
                 <motion.div
                     animate={{ opacity: [0, 1] }}
                     transition={{ repeat: Infinity, duration: 0.8 }}
