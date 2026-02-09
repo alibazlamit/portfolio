@@ -74,10 +74,37 @@ export const DATA = {
     ],
     projects: [
         {
+            title: "Healthyfy Platform",
+            tech: "TypeScript, React Native, NestJS, Azure OpenAI",
+            description: "Architected a comprehensive healthtech platform in a Turborepo monorepo. Built a React Native mobile app, Next.js Coach Portal, and NestJS backend on Azure AKS. Integrated Azure OpenAI for AI coaching and Firestore for real-time chat.",
+            link: "#",
+            private: true,
+        },
+        {
             title: "Distributed Rate Limiter",
             tech: "Go & Redis",
             description: "Developed a high-performance Leaky Bucket rate-limiting library in Go, optimized for low-latency, thread-safe operation in high-traffic API gateways and distributed environments.",
             link: "https://github.com/alibazlamit/golang-leaky-bucket-redis-rate-limiter",
+        },
+        {
+            title: "MDM Data Pipeline",
+            tech: "Go, nats.io, PostageSQL, ClickHouse, Redis",
+            description: "Developed core components of a high-throughput Master Data Management pipeline handling 1.2B+ records. Implemented deduplication, enrichment, and validation at scale for enterprise data consistency.",
+            link: "#",
+            private: true,
+        },
+        {
+            title: "ClickHouse Validation Engine",
+            tech: "Go & ClickHouse",
+            description: "Built a high-concurrency verification tool in Go to audit 100M+ records between Reltio and internal MDM. Engineered a batch processing pipeline using worker pools and ClickHouse optimizations.",
+            link: "#",
+            private: true,
+        },
+        {
+            title: "Infrastructure as Code Tools",
+            tech: "Go, Packer, Kubernetes",
+            description: "Contributed to HashiCorp Packer's plugin ecosystem and NetApp's Kubernetes Service (NKS) SDK. Implemented core functionality for cloud infrastructure provisioning and automation.",
+            link: "https://github.com/hashicorp/packer",
         },
     ],
 };
