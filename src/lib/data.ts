@@ -36,22 +36,16 @@ export const DATA = {
     },
     experience: [
         {
-            company: "Rapid River Software",
-            role: "Senior Backend Consultant",
-            period: "Jan 2023 – Present",
-            description: "Designed and implemented high-concurrency Master Data Management (MDM) pipelines in Go, enabling the reliable synchronization and harmonization of 1.2 billion records for Internet Brands.",
-        },
-        {
-            company: "ClickHouse Validation Engine",
-            role: "Senior Backend Consultant",
-            period: "Jan 2023 – Present",
-            description: "Engineered a custom ClickHouse-based validation engine to verify large-scale datasets, reducing a 4-day manual verification process to just 6 hours. Ensured zero-loss data integrity during major system migrations.",
-        },
-        {
             company: "Healthyfy.io",
             role: "Senior Backend Consultant",
             period: "Jan 2023 – Present",
             description: "Architected and delivered an AI-powered chat system using Azure OpenAI and Cosmos DB. Optimized backend performance and operational visibility through a specialized admin portal and mobile application built with NestJS and Next.js.",
+        },
+        {
+            company: "Rapid River Software",
+            role: "Senior Backend Consultant",
+            period: "Jan 2024 – Apr 2025",
+            description: "Designed and implemented high-concurrency Master Data Management (MDM) pipelines in Go, enabling the reliable synchronization and harmonization of 1.2 billion records for Internet Brands.",
         },
         {
             company: "Human Care Systems",
