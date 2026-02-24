@@ -17,7 +17,7 @@ export function Hero() {
                         transition={{ duration: 0.5 }}
                         className="inline-block px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-sm font-medium border border-cyan-500/20"
                     >
-                        Open to new opportunities
+                        Available for Remote B2B/Contract
                     </motion.div>
 
                     <motion.h1

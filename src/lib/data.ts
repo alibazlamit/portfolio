@@ -8,7 +8,7 @@ export const DATA = {
     email: "ali.bazlamit@hotmail.com",
     phone: "+387 62 615 765",
     summary:
-        "Senior Backend Engineer with 15+ years of experience designing and scaling distributed systems, data pipelines, and cloud-native platforms. Specialized in Go, high-throughput data processing, and event-driven architectures, with a proven track record of architecting Master Data Management (MDM) solutions operating at billion-record scale. Expert in replacing legacy workflows with automated, reliable production systems across regulated healthtech and high-scale enterprise SaaS environments.",
+        "Senior Backend Engineer with 15+ years of experience designing and scaling distributed systems. Proven track record of optimizing legacy systems—recently engineered a fully automated validation engine that processes huge datasets in just 6 hours, replacing a manual, multi-day workflow. Focused on writing clean, maintainable code and building reliable microservices that handle high traffic. Available for Remote B2B/Contract work immediately.",
     socials: {
         linkedin: "https://www.linkedin.com/in/ali-bazlamit-47009a28/",
         github: "https://github.com/alibazlamit",
@@ -36,34 +36,72 @@ export const DATA = {
     },
     experience: [
         {
-            company: "Healthyfy.io",
-            role: "Senior Software Engineer",
+            company: "Independent / Strategic Engagements",
+            role: "Senior Software Engineer | Distributed Systems & Infrastructure",
             period: "Jan 2023 – Present",
-            description: "Architected and delivered an AI-powered chat system using Azure OpenAI and Cosmos DB. Optimized backend performance and operational visibility through a specialized admin portal and mobile application built with NestJS and Next.js.",
-        },
-        {
-            company: "Rapid River Software",
-            role: "Senior Software Engineer",
-            period: "Jan 2024 – Apr 2025",
-            description: "Designed and implemented high-concurrency Master Data Management (MDM) pipelines in Go, enabling the reliable synchronization and harmonization of 1.2 billion records for Internet Brands.",
+            description: [
+                "Rapid River Software (MDM for Internet Brands): Played a key engineering role in replacing the legacy Reltio system for WebMD and Mercury, building high-performance Go pipelines to synchronize 1.2 billion records and saving approximately $2M/year.",
+                "Validation Engine Engineering: Engineered a custom ClickHouse-based validation engine to verify large-scale datasets, fully automating a manual workflow to deliver results in just 6 hours.",
+                "Healthyfy.io (AI Platform): Implemented backend logic for a sentiment-aware AI coaching agent, building the escalation service that detects critical user sentiment to transfer sessions from AI to human coaches.",
+                "Full-Stack Delivery: Responsible for creating and implementing fully functional React Native views for the mobile frontend and a robust backend with MySQL and NestJS API."
+            ],
         },
         {
             company: "Human Care Systems",
             role: "Senior Software Development Engineer",
             period: "Aug 2021 – Jan 2023",
-            description: "Transitioned from manual, error-prone script migrations to a centralized, configuration-driven deployment system (Airtable-backed). Reduced migration script time from hours to minutes. Developed HIPAA/GDPR-compliant backend services.",
+            description: [
+                "Platform Architecture (Resilix): Contributed to the design and development of a distributed system using microservices for the Resilix digital health platform.",
+                "Deployment Automation: Transitioned from manual script migrations to a centralized, configuration-driven deployment system, reducing execution time from several hours to minutes.",
+                "Technical Strategy: Responsible for designing and writing technical specifications for assigned features and tasks while ensuring HIPAA/GDPR compliance."
+            ],
         },
         {
             company: "Gartner & KLM BIH",
             role: "Senior Software Developer (Go/Infrastructure)",
             period: "Mar 2019 – Aug 2021",
-            description: "Led migration from legacy PHP monolith to Go-based microservices. Maintained NetApp Kubernetes Services (NKS) SDK in Go and Packet.com Python SDK. Designed pilot cloud marketplace using Terraform.",
+            description: [
+                "Microservices Migration: Key contributor to a strategic migration from a legacy PHP monolith to a Go-based microservices architecture, significantly improving system performance via AWS SQS/SNS.",
+                "Infrastructure Tooling: Maintained the NetApp Kubernetes Services (NKS) SDK in Go and developed the Packet.com Python SDK for the global developer community.",
+                "Cloud Architecture: Designed a pilot cloud marketplace using Terraform and REST APIs to automate resource provisioning and cloud environment setup."
+            ],
         },
         {
-            company: "Mistral Technologies & NetApp",
+            company: "NetApp (via StackPointCloud)",
+            role: "Senior Software Developer",
+            period: "Aug 2016 – Feb 2019",
+            description: [
+                "Kubernetes Infrastructure: Played a pivotal role in the NKS project, developing Helm charts, Helm gRPC APIs, and the NKS CLI for Kubernetes management.",
+                "Security & Access: Implemented Kubernetes RBAC and kubeconfig RBAC for secure resource access.",
+                "Polyglot SDK Development: Collaborated on cloud provider tools and SDKs in Go, C#, Python, PHP, Ruby, Java, and Node.js."
+            ],
+        },
+        {
+            company: "Mistral Technologies",
             role: "Technical Team Lead",
-            period: "Jan 2010 – Jan 2019",
-            description: "Spearheaded VarDynamics project architecture. Led cross-functional teams for cloud/Kubernetes tooling. Architected high-performance backend APIs using a polyglot stack (Go, Python, Java, PHP).",
+            period: "Jan 2015 – Jul 2016",
+            description: [
+                "Engineering Leadership: Led a development team, orchestrating sprint planning and collaborating with stakeholders.",
+                "Full-Stack Delivery: Delivered production-ready releases using .NET C#, REST APIs, PowerShell scripts, MongoDB, and knockout.js."
+            ],
+        },
+        {
+            company: "Mistral Technologies",
+            role: "Software Developer",
+            period: "May 2013 – Jan 2015",
+            description: [
+                "Backend API Development: Designed and developed back-end APIs for Microsoft Exchange, SharePoint, and Dynamics CRM.",
+                "Internal Tooling: Led the creation of an intranet application for employee management using Ruby on Rails and AngularJS."
+            ],
+        },
+        {
+            company: "Compusight Corporation",
+            role: "Software Developer",
+            period: "Feb 2011 – May 2013",
+            description: [
+                "CRM Development: Contributed to the development of the Move Desk project, a CRM solution for the moving industry.",
+                "Feature Engineering: Implemented features including Bing maps integration, resource allocation, and warehouse management."
+            ],
         },
     ],
     projects: [

@@ -38,9 +38,17 @@ export function Experience() {
 
                                 <h3 className="text-xl font-bold text-slate-100">{item.role}</h3>
                                 <div className="text-slate-400 font-medium mb-4">{item.company}</div>
-                                <p className="text-slate-400 leading-relaxed text-sm md:text-base">
-                                    {item.description}
-                                </p>
+                                {Array.isArray(item.description) ? (
+                                    <ul className="list-disc list-outside ml-4 space-y-2 text-slate-400 leading-relaxed text-sm md:text-base">
+                                        {item.description.map((desc, i) => (
+                                            <li key={i}>{desc}</li>
+                                        ))}
+                                    </ul>
+                                ) : (
+                                    <p className="text-slate-400 leading-relaxed text-sm md:text-base">
+                                        {item.description}
+                                    </p>
+                                )}
                             </div>
                         </div>
                     </motion.div>
