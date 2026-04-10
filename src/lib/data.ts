@@ -106,6 +106,12 @@ export const DATA = {
     ],
     projects: [
         {
+            title: "Husna: 99 Names of Allah",
+            tech: "React Native, Expo",
+            description: "Developed an educational mobile game with a great cause, designed to encourage kids to intuitively learn the 99 Names of Allah through engaging and interactive gameplay.",
+            link: "https://play.google.com/store/apps/details?id=com.alibazlamit.husnamobile",
+        },
+        {
             title: "Healthyfy Platform",
             tech: "TypeScript, React Native, NestJS, Azure OpenAI",
             description: "Architected a comprehensive healthtech platform in a Turborepo monorepo. Built a React Native mobile app, Next.js Coach Portal, and NestJS backend on Azure AKS. Integrated Azure OpenAI for AI coaching and Firestore for real-time chat.",
